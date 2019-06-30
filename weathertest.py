@@ -1,4 +1,6 @@
+# _*_ coding: utf-8 _*_
 import requests
+from wxpy import *
 import json
 city = input('请输入要查询的城市名称：')
 
