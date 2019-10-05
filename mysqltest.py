@@ -18,6 +18,7 @@ class dbexec(object):
         #sql_2 = "INSERT INTO learnsql_1(FIRST_NAME,LAST_NAME, AGE, SEX, INCOME) VALUES ('%s' %self.FIRST_NAME+, '陈', 20, 'M', 2000)"
         cursor.execute(sql_2)
         db.commit()
+
     def deletedata(self,FIRST_NAME):
         sql = "delete from learnsql_1 where FIRST_NAME='%s'" % (FIRST_NAME)
         print(sql)
@@ -30,8 +31,8 @@ class dbexec(object):
 
 try:
     db0728 = dbexec()
-    db0728.adddata('Macas', '陈', 20, 'M', 2000)
-    db0728.deletedata('Maca1')
+    db0728.adddata('ccx', '陈', 20, 'M', 2000)
+    db0728.deletedata('cc')
 except:
     db.rollback()
 
